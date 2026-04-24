@@ -31,7 +31,6 @@ import java.util.regex.Pattern;
 import com.facebook.common.logging.FLog;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactApplicationContext;
-import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
@@ -46,7 +45,7 @@ import java.io.OutputStream;
 import java.io.IOException;
 
 
-public class SQLitePlugin extends ReactContextBaseJavaModule {
+public class SQLitePlugin extends SQLitePluginSpec {
 
     public static final String TAG = SQLitePlugin.class.getSimpleName();
 
